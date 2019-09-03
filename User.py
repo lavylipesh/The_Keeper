@@ -22,4 +22,4 @@ def generatePassword(num):
         x = random.randint(0,100)
         password += string.printable[x]
     return password
-print generatePassword(25) 
+ 
