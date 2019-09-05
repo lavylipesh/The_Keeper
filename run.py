@@ -23,4 +23,51 @@ def main():
     print("*"*100)
     
 
+def create_user(username,password):
+    '''
+    fuction that creates user accounts
+    '''
+    new_user = User(username,password):
+    return new_user
+def save_user():
+    '''
+    a function to save a user
+    '''
+    User.save_user()
+def  create_credentials(account,username,password):
+    '''
+    function that creates new credentials
+    '''
+    new_credentials = Credentials(account,username,password):
+    return new_credentials
+def save_credentials():
+    '''
+    function that saves all our created credentials
+    '''
+    Credentials.save_credentials()
+def delete_credentials():
+    '''
+    function to delete credentials
+    '''
+    credentials.delete_credentials()
+def search_credentials():
+    '''
+    functio that finds credentials by username and returns the credentials
+    
+    '''
+    return Credentials
+def test_credentials_exist():
+    '''
+    function that checks if credentials exist
+    '''
+    return Credentials
+def display_credentials():
+    '''
+    function that returns all saved credentials
+    '''
+    return Credentials.display_credentials()
 
+
+
+if __name__ == '__main__':
+    main()                              
