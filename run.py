@@ -76,7 +76,7 @@ def main():
     username = input()
     print('*'*20)
     while True:
-        print("use the shortcodes:'pass' to create your password\n'gp to generate your password'")
+        print("use the shortcodes:'pass' to create your password\n'gp' to generate your password")
         my_choice = input()
         if my_choice == 'pass':
             print("Your password Please")
@@ -86,17 +86,14 @@ def main():
             password = generatePassword()
             print('*'* 80)
         else:
-            
-            print(f"Welcome to Keeper {username}")
+            print("INVALID!!!!!!")
+            print('')
+        my_choice = input().lower()
+    print('')
+    print(f"Welcome to Keeper {username} your password is {password}")
     while True:
-        print("Use the following shortcodes: MC-to make new account credentials\n SEE-to view account credentials \n Delete-to remove credentials you do not want \n TOKA-to exit the application")
-
-
-    
-     
-    
-
-
+        print("Use the shortcodes: 'MC'-to make new credentials,'delete'-to delete unwanted credentials,'SC'-to see credentials\n 'EXIT!!'to exit Keeper
+        ")
 
 if __name__ == '__main__':
     main()                              
