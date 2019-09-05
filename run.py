@@ -16,29 +16,29 @@ def keep():
     print("|_|      \_\  | |___________|  |_|_________|     |_|                ")
 keep()   
 
-def main():
-    print("HELLO ;)")
-    print('*'*100)
-    print("Welcome to KEEPER where you can store passwords for all your existing accounts and generate passwords for any account you may want to sign in to.ENJOY!!!")
-    print("*"*100)
-    
 
 def create_user(username,password):
     '''
     fuction that creates user accounts
     '''
-    new_user = User(username,password):
+    new_user = User(username,password)
     return new_user
 def save_user():
     '''
     a function to save a user
     '''
     User.save_user()
+def generatePassword():
+    '''
+    function to generate a password for the user
+    '''
+    generatePassword = User.generatePassword()
+    return generatePassword    
 def  create_credentials(account,username,password):
     '''
     function that creates new credentials
     '''
-    new_credentials = Credentials(account,username,password):
+    new_credentials = Credentials(account,username,password)
     return new_credentials
 def save_credentials():
     '''
@@ -55,17 +55,46 @@ def search_credentials():
     functio that finds credentials by username and returns the credentials
     
     '''
-    return Credentials
+    return Credentials.search_credentials()
 def test_credentials_exist():
     '''
     function that checks if credentials exist
     '''
-    return Credentials
+    return Credentials.test_credentials_exist()
 def display_credentials():
     '''
     function that returns all saved credentials
     '''
     return Credentials.display_credentials()
+def main():
+    print("HELLO ;)")
+    print('*'*100)
+    print("Welcome to KEEPER \n You can store passwords for all your existing accounts and generate passwords for any account you may want to sign in to.\n ENJOY!!!")
+    print("*"*100)
+    print("To access keeper please login")
+    print("Username:")
+    username = input()
+    print('*'*20)
+    while True:
+        print("use the shortcodes:'pass' to create your password\n'gp to generate your password'")
+        my_choice = input()
+        if my_choice == 'pass':
+            print("Your password Please")
+            password = input()
+            print('*'*60)
+        elif my_choice == 'gp':
+            password = generatePassword()
+            print('*'* 80)
+        else:
+            
+            print(f"Welcome to Keeper {username}")
+    while True:
+        print("Use the following shortcodes: MC-to make new account credentials\n SEE-to view account credentials \n Delete-to remove credentials you do not want \n TOKA-to exit the application")
+
+
+    
+     
+    
 
 
 
