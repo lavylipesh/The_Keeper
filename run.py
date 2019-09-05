@@ -27,7 +27,7 @@ def create_user():
     '''
     function to create a new user
     '''
-    #new_user = User(username,password):
+    new_user = User(username,password):
     return new_user
 def save_user():
     '''
@@ -38,7 +38,7 @@ def  create_credentials():
     '''
     function that creates new credentials
     '''
-    #new_credentials = Credentials(account,username,password):
+    new_credentials = Credentials(account,username,password):
     return new_credentials
 def save_credentials():
     '''
