@@ -38,6 +38,9 @@ def  create_credentials(account,username,password):
     '''
     function that creates new credentials
     '''
+    credentials = input('Enter the name:')
+    name =  ("Enter your username")
+    password = ("Input you password")
     new_credentials = Credentials(account,username,password)
     return new_credentials
 def save_credentials():
