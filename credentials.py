@@ -11,6 +11,10 @@ class Credentials:
         self.account = account
         self.username = username
         self.password = password
+    def create_credentials():
+        '''
+        unction to crete credentials
+        '''    
     def save_credentials(self):
         '''
         method that saves credentials objects into credential_list

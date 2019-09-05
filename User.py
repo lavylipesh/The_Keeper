@@ -10,7 +10,11 @@ class User:
         __init__ method that helps us define properties for our objects
         '''
         self.username = username
-        self.password = password    
+        self.password = password
+    def create_user():
+        '''
+        method thhat helps us create our user
+        '''        
     def save_user(self):
         '''
         method that saves user objects into user_list
