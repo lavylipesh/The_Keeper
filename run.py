@@ -15,6 +15,14 @@ def keep():
     print("| |     \ \   | |___________   | |_________      | |                ")
     print("|_|      \_\  | |___________|  |_|_________|     |_|                ")
 keep()   
+
+def main():
+    print("HELLO ;)")
+    print('*'*100)
+    print("Welcome to KEEPER where you can store passwords for all your existing accounts and generate passwords for any account you may want to sign in to.ENJOY!!!")
+    print("*"*100)
+    
+
 def create_user(username,password):
     '''
     function to create a new user
@@ -45,6 +53,7 @@ def delete_credentials(credentials):
 def search_credentials(username):
     '''
     functio that finds credentials by username and returns the credentials
+    
     '''
     return Credentials
 def test_credentials_exist(username):
@@ -57,3 +66,7 @@ def display_credentials():
     function that returns all saved credentials
     '''
     return Credentials.display_credentials()
+
+
+if __name__ == '__main__':
+    main()                              
