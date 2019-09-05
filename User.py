@@ -20,10 +20,6 @@ class User:
         method that saves user objects into user_list
         ''' 
         User.user_list.append(self)
-    def generatePassword(num):
-        password = ''
-        for n in range(num):
-            x = random.randint(0,100)
-            password += string.printable[x]
-        return password
+    def generatePassword():
+        return ' '.join(random.choice(string.ascii_letters + string.digits) for i in range (10))
     

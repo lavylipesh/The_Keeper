@@ -32,8 +32,8 @@ def generatePassword():
     '''
     function to generate a password for the user
     '''
-    generatePassword = User.generatePassword()
-    return generatePassword    
+    print(User.generatePassword())
+     
 def  create_credentials(account,username,password):
     '''
     function that creates new credentials
@@ -104,9 +104,9 @@ def main():
                 if short_code == 'pass':
                     print("Please input your password")
                     password == input()
-                elif short_code ==  'gp'
-                password == generatePassword()
-                print('*'*70)    
+                elif short_code ==  'gp':
+                    password == generatePassword()
+                    print('*'*70)    
 
 
 
