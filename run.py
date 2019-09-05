@@ -23,12 +23,7 @@ def main():
     print("*"*100)
     
 
-def create_user():
-    '''
-    function to create a new user
-    '''
-    new_user = User(username,password):
-    return new_user
+
 def save_user():
     '''
     a function to save a user
@@ -42,7 +37,7 @@ def  create_credentials():
     return new_credentials
 def save_credentials():
     '''
-    function that saves all our creaated credentials
+    function that saves all our created credentials
     '''
     Credentials.save_credentials()
 def delete_credentials():
