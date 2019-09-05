@@ -94,6 +94,22 @@ def main():
     print(f"Welcome to Keeper {username} your password is {password}")
     while True:
         print("Use the shortcodes: 'MC'-to make new credentials,'delete'-to delete unwanted credentials,'SC'-to see credentials\n 'EXIT!!'to exit Keeper")
+        if short_code == 'MC':
+            print("Which account details would you like to save??")
+            account == input()
+            print("Enter your Username")
+            username == input()
+            while True:
+                print("use the shortcodes:\n 'pass' to create your own password \n 'gp' for the application to generate a password for you")
+                if short_code == 'pass':
+                    print("Please input your password")
+                    password == input()
+                elif short_code ==  'gp'
+                password == generatePassword()
+                print('*'*70)    
+
+
+
         
 
 if __name__ == '__main__':

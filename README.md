@@ -18,6 +18,7 @@ you can run my application by typing the following commanda in your terminal.
 $ chmod +x run.py
 $ ./run.py
 # BDD
+
 Behaviour    |    Input
 Run app in thr terminal|./run.py
 Username required|enter username
