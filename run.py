@@ -83,15 +83,17 @@ def main():
             print("Your password Please")
             password = input()
             print('*'*60)
+            print(f"Welcome to Keeper {username} your password is {password}")
         elif my_choice == 'gp':
             password = generatePassword()
             print('*'* 80)
+            print(f"Welcome to Keeper {username} your password is {password}")
         else:
             print("INVALID!!!!!!")
             print('')
         my_choice = input().lower()
     print('')
-    print(f"Welcome to Keeper {username} your password is {password}")
+    
     while True:
         print("Use the shortcodes: 'MC'-to make new credentials,'delete'-to delete unwanted credentials,'SC'-to see credentials\n 'EXIT!!'to exit Keeper")
         if short_code == 'MC':
